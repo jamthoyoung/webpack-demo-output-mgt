@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import './style.css';
 import smile from './smile.png';
+import Data from './data.xml';
 
 function component() {
   var element = document.createElement('div');
@@ -13,7 +14,10 @@ function component() {
   var myIcon = new Image();
   myIcon.src = smile;
   element.appendChild(myIcon);
-  
+
+  console.log('hahahah');
+  console.log(Data);
+
   return element;
 }
 
